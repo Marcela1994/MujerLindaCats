@@ -1,0 +1,63 @@
+﻿.formato {
+    background-color: #794949;
+    font-family: tahoma
+}
+
+.redes-sociales {
+    width: 50px;
+    height: 50px;
+}
+
+.inicial {
+    width: 160px;
+    height: 150px;
+    text-align: left
+}
+
+
+.inicio {
+    width: 150px;
+    height: 150px;
+    float: right;
+}
+
+.titulo {
+    font-family: fantasy;
+    background-color: #9a5f58;
+    color: beige;
+    text-align: center
+}
+
+.formulario {
+    text-align: center;
+    font-family: cursive
+}
+
+
+.parrafoCentral {
+    text-align: justify;
+    background-color: #9a7f7a;
+    font-family: cursive;
+    color: beige
+}
+
+.subtitulo {
+    font-family: cursive;
+    background-color: #cc99ff;
+    color: black;
+    text-align: center
+}
+
+.tituloImg {
+    width: 100px;
+    height: 100px
+}
+
+.contenido {
+    color: beige;
+    background-color: #9a7f7a;
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+    margin-left: 10%;
+}

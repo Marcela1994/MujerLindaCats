@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaginaMujerLinda", "PaginaMujerLinda.csproj", "{A75C0F26-CACC-45D3-A2EB-6B83C1AE4CCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "..\Datos\Datos.csproj", "{8BD1C1C4-D5B1-4EF9-AAA6-0572D707ACFD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AA84E976-9448-43E2-A288-17EB67AF948E} = {AA84E976-9448-43E2-A288-17EB67AF948E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "..\Modelo\Modelo.csproj", "{AA84E976-9448-43E2-A288-17EB67AF948E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A75C0F26-CACC-45D3-A2EB-6B83C1AE4CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A75C0F26-CACC-45D3-A2EB-6B83C1AE4CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A75C0F26-CACC-45D3-A2EB-6B83C1AE4CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A75C0F26-CACC-45D3-A2EB-6B83C1AE4CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD1C1C4-D5B1-4EF9-AAA6-0572D707ACFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD1C1C4-D5B1-4EF9-AAA6-0572D707ACFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD1C1C4-D5B1-4EF9-AAA6-0572D707ACFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD1C1C4-D5B1-4EF9-AAA6-0572D707ACFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA84E976-9448-43E2-A288-17EB67AF948E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA84E976-9448-43E2-A288-17EB67AF948E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA84E976-9448-43E2-A288-17EB67AF948E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA84E976-9448-43E2-A288-17EB67AF948E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.Interception.2.1.505.2\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Data.5.0.505.0\lib\NET35
+		SolutionGuid = {781CE8CD-7709-43D1-AE32-3614AD5CBB9E}
+	EndGlobalSection
+EndGlobal
