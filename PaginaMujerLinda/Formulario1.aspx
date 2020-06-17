@@ -68,9 +68,8 @@
             <input type="text" class="form-control col-md-12" id="telefono2" name="telefono2" placeholder="INGRESE SU NÚMERO TELEFONICO" required="required"/>
         </div>
 
-        <center>
-                            <button type="submit" class="btn btn-primary">SIGUIENTE</button>
-        </center>
+        <center><button type="submit" class="btn btn-primary">SIGUIENTE</button></center>
+
     </form>
 
     <a href="index.aspx"><img class="inicio" src="/Imagenes/inicio_profe.jpg" alt="Inicio"/><br></a>
