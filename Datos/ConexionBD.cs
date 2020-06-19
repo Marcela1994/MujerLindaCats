@@ -11,7 +11,7 @@ namespace Datos
         public string bdLocal = @"packet size=4096; persist security info=True; Data Source=DESKTOP-D4K75HQ\MARCE; Initial Catalog=mujerlinda; Integrated Security=SSPI; Timeout=300";
         public string nombre = "Daniel";
 
-        public Mascota ejecutarProcedimineto()
+        public MascotaDao ejecutarProcedimineto()
         {
             Database SqlBdd = new SqlDatabase(bdLocal);
             DbCommand Comando = SqlBdd.GetStoredProcCommand("ConsultarMascotasPorNombre");
@@ -22,7 +22,7 @@ namespace Datos
             DataTable dtConsulta;
             dtConsulta = DS.Tables[0];
 
-            Mascota mas = new Mascota();
+            MascotaDao mas = new MascotaDao();
             mas.nombre = dtConsulta.Rows[0]["nombres"].ToString();
             return mas;
         }

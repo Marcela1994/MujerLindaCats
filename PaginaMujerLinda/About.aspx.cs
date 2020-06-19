@@ -16,7 +16,7 @@ namespace PaginaMujerLinda
         public void Consultar()
         {
             Datos.ConexionBD con = new ConexionBD();
-            Mascota mascota = new Mascota();
+            MascotaDao mascota = new MascotaDao();
             mascota = con.ejecutarProcedimineto();
             lblnombre.Text = mascota.nombre;
             
