@@ -5,6 +5,6 @@ create proc consulta_usuario
 )
 as
 begin
-select count (*) from dbo.usuarios u
+select count (*) as existe from dbo.usuarios u
 where u.usuario = @user and u.clave = @pass;
 end

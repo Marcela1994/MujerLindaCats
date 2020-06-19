@@ -1,0 +1,13 @@
+#PaginaMujerLinda
+PaginaMujerLinda/bin/
+PaginaMujerLinda/obj/
+PaginaMujerLinda/.vs/
+
+#Modelo
+Modelo/bin/
+Modelo/obj/
+
+#Datos
+Datos/bin/
+Datos/obj/
+Datos/ConexionBD.cs
