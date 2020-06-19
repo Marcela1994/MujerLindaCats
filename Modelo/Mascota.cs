@@ -11,7 +11,8 @@ namespace Modelo
         public string nombre { get; set; }
         public string edad { get; set; }
         public string color { get; set; }
-        public string esteriliado { get; set; }
+        public string genero { get; set; }
+        public string esterilizado { get; set; }
         public string vacunado { get; set; }
         public string desparasitado { get; set; }
     }
