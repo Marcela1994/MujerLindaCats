@@ -15,3 +15,7 @@ insert into dbo.mascota (nombre, edad_mascota, color_mascota, genero, esteriliza
 values (@nombre, @edad, @color, @genero, @esterilizado, @vacuna, @desparasitado);
 SELECT @@ROWCOUNT as CantRegs;
 end
+
+
+insert into dbo.usuarios (ID, usuario, clave, nombre)
+values (1234, 'admin', 'admin', 'marce')
