@@ -1,9 +1,0 @@
-C:\Users\User\Desktop\Ciclo 6\Aplicaciones 2\Modelo\bin\Debug\Modelo.dll
-C:\Users\User\Desktop\Ciclo 6\Aplicaciones 2\Modelo\bin\Debug\Modelo.pdb
-C:\Users\User\Desktop\Ciclo 6\Aplicaciones 2\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
-C:\Users\User\Desktop\Ciclo 6\Aplicaciones 2\Modelo\obj\Debug\Modelo.dll
-C:\Users\User\Desktop\Ciclo 6\Aplicaciones 2\Modelo\obj\Debug\Modelo.pdb
-C:\proyecto_MujerLinda\MujerLindaCats\Modelo\bin\Debug\Modelo.dll
-C:\proyecto_MujerLinda\MujerLindaCats\Modelo\bin\Debug\Modelo.pdb
-C:\proyecto_MujerLinda\MujerLindaCats\Modelo\obj\Debug\Modelo.dll
-C:\proyecto_MujerLinda\MujerLindaCats\Modelo\obj\Debug\Modelo.pdb
