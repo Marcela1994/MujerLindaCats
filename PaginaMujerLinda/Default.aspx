@@ -37,7 +37,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Adopciones</h5>
                         <p class="card-text">Busca tu gato ideal</p>
-                        <a href="Ct_mascotasAdopcion" class="btn btn-primary">Ver Mascotas</a>
+                        <a href="MostrarMascota.aspx" class="btn btn-primary">Ver Mascotas</a>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Contactenos</h5>
                         <p class="card-text">En que podemos ayudarle... </p>
-                        <a href="contactenos.jsp" class="btn btn-primary">Contactenos</a>
+                        <a href="Contactenos.aspx" class="btn btn-primary">Contactenos</a>
                     </div>
                 </div>
             </div>

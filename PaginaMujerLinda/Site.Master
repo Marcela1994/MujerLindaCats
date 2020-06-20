@@ -80,8 +80,8 @@
         </asp:ContentPlaceHolder>
         <hr />
         <footer>
-            <h5>Deisy Marcela Cuellar Galvira - Desarrollo de software ciclo 4<br>
-                Politecnico Internacional</h5>
+            <h6>Deisy Marcela Cuellar Galvira - Desarrollo de software ciclo 6<br>
+                Politecnico Internacional</h6>
             <p>&copy; <%: DateTime.Now.Year %> - Mujer Linda</p>
         </footer>
     </div>

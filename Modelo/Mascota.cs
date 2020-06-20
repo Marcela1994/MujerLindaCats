@@ -15,5 +15,6 @@ namespace Modelo
         public string esterilizado { get; set; }
         public string vacunado { get; set; }
         public string desparasitado { get; set; }
+        public byte[] foto { get; set; }
     }
 }

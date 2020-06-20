@@ -7,12 +7,13 @@ create proc insertarMascota
 @genero varchar(6),
 @esterilizado varchar(5),
 @vacuna varchar(5),
-@desparasitado varchar(5)
+@desparasitado varchar(5),
+@foto image
 )
 as
 begin 
-insert into dbo.mascota (nombre, edad_mascota, color_mascota, genero, esterilizado, vacunado, desparasitado)
-values (@nombre, @edad, @color, @genero, @esterilizado, @vacuna, @desparasitado);
+insert into dbo.mascota (nombre, edad_mascota, color_mascota, genero, esterilizado, vacunado, desparasitado, foto)
+values (@nombre, @edad, @color, @genero, @esterilizado, @vacuna, @desparasitado, @foto);
 SELECT @@ROWCOUNT as CantRegs;
 end
 

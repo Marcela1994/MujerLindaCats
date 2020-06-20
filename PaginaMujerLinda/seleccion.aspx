@@ -8,7 +8,7 @@
         <br>
         <center>
                     <table>
-                        <td><a href="Publicacion_Mascotas.aspx"><img src="Imagenes/img_publicacion gatos.png" width="300" height="300"></a></td>
+                        <td><a href="PublicacionMascotas.aspx"><img src="Imagenes/img_publicacion gatos.png" width="300" height="300"></a></td>
                         <td></td>
                         <td><a href="VistaFormularios.aspx"><img src="Imagenes/img_verformularios.jpg" width="300" height="300"></a></td>
                     </table>
