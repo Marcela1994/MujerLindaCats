@@ -8,6 +8,6 @@ namespace Datos
 {
     public class ConexionBD
     {
-        public string bdLocal = @"packet size=4096; persist security info=True; Data Source=DESKTOP-D4K75HQ\MARCE; Initial Catalog=proyecto; Integrated Security=SSPI; Timeout=300";
+        public string bdLocal = @"Data Source = tcp:mujerlindaserver.database.windows.net,1433;Initial Catalog=mujerlinda;Persist Security Info=False;User ID=deisycuellarg;Password=Deftones92*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     }
 }
