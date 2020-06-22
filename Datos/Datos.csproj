@@ -77,9 +77,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBD.cs" />
+    <Compile Include="dataTable.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="MascotaDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResumenFormulario.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Modelo\Modelo.csproj">

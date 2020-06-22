@@ -11,6 +11,8 @@
                         <td><a href="PublicacionMascotas.aspx"><img src="Imagenes/img_publicacion gatos.png" width="300" height="300"></a></td>
                         <td></td>
                         <td><a href="VistaFormularios.aspx"><img src="Imagenes/img_verformularios.jpg" width="300" height="300"></a></td>
+                        <td></td>
+                        <!--<td><a href="VistaFormularios.aspx"><img src="Imagenes/editar_gatos.jpg" width="300" height="300"></a></td>-->
                     </table>
                 </center>
         <br>

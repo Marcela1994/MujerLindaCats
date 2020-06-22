@@ -34,6 +34,6 @@
 
         </div>
     </div>
-    <a href="Default.aspx"><img class="inicio" src="Imagenes/inicio_profe.jpg" alt="Inicio"><br></a>
 
+    <a href="Default.aspx"><img class="inicio" src="Imagenes/inicio_profe.jpg" alt="Inicio"><br></a>
 </asp:Content>

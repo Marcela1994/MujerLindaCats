@@ -114,6 +114,7 @@
     <Content Include="gif\contactenos.gif" />
     <Content Include="Imagenes\adopciones.jpg" />
     <Content Include="Imagenes\casosDeExito.jpg" />
+    <Content Include="Imagenes\editar_gatos.jpg" />
     <Content Include="Imagenes\facebook.png" />
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="Imagenes\fondoCuerpo.jpg" />

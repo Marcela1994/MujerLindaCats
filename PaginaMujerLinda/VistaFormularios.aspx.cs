@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Datos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,9 @@ namespace PaginaMujerLinda
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //ResumenFormulario res = new ResumenFormulario();
+            //Gridview_Resumen.DataSource = res.resumenFormulario();
+            //Gridview_Resumen.DataBind();
         }
     }
 }
