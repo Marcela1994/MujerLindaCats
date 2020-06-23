@@ -62,18 +62,18 @@
         </asp:ScriptManager>
 
         <div class="form-row align-items-center">
-                    <div class="col-auto">
-                        <asp:Label runat="server" CssClass="text-white" ID="lblUsuario" AssociatedControlID="ingreso_user">Usario: </asp:Label>
-                        <asp:TextBox ID="ingreso_user" runat="server" CssClass="form-control mb-2"></asp:TextBox>
-                    </div>
-                    <div class="col-auto">
-                        <asp:Label runat="server" CssClass="text-white" ID="Label1" AssociatedControlID="ingreso_pass">Clave: </asp:Label>
-                        <asp:TextBox ID="ingreso_pass" runat="server" TextMode="Password" CssClass="form-control mb-2"></asp:TextBox>
-                    </div>
-                    <div class="col-auto">
-                        <asp:Button ID="btn_ingresar" runat="server" text="INGRESAR" CssClass="btn btn-primary mb-2" OnClick="btn_ingresar_Click" />
-                    </div>
-                </div>
+            <div class="col-auto">
+                <asp:Label runat="server" CssClass="text-white" ID="lblUsuario" AssociatedControlID="ingreso_user">Usario: </asp:Label>
+                <asp:TextBox ID="ingreso_user" runat="server" CssClass="form-control mb-2"></asp:TextBox>
+            </div>
+            <div class="col-auto">
+                <asp:Label runat="server" CssClass="text-white" ID="Label1" AssociatedControlID="ingreso_pass">Clave: </asp:Label>
+                <asp:TextBox ID="ingreso_pass" runat="server" TextMode="Password" CssClass="form-control mb-2"></asp:TextBox>
+            </div>
+            <div class="col-auto">
+                <asp:Button ID="btn_ingresar" runat="server" Text="INGRESAR" CssClass="btn btn-primary mb-2" OnClick="btn_ingresar_Click"/>
+            </div>
+        </div>
         
     </form>
         </nav>

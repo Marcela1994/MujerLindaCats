@@ -1,219 +1,147 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="formulario4.aspx.cs" Inherits="Test.Principal.formulario4" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterFormularios.Master" AutoEventWireup="true" CodeBehind="Formulario4.aspx.cs" Inherits="PaginaMujerLinda.Formulario4" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="shortcut icon" href="/Imagenes/mujerlinda_logo.jpg">
-    <title>Datos de sus compañeros animales</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
-    <link href="/estilo.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-            <center><table border="0">
-                    <thead>
-                        <tr><center>
-                            <th><img src="/Imagenes/mujerlinda_logo.jpg" class="tituloImg"></th>
-                            <th><h1 class="titulo">FORMULARIO DE ADOPCION</h1></th>
-                        <th><img src="/Imagenes/mujerlinda_logo.jpg" class="tituloImg"></th>
-                        </tr></center>
-                    </thead>
-                </table></center>
-        <h2 class="subtitulo">INGRESO DE LA INFORMACION SOBRE SUS COMPAÑEROS ANIMALES PASADOS O ACTUALES</h2>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h2 class="subtitulo">INGRESO DE LA INFORMACION SOBRE SUS COMPAÑEROS ANIMALES PASADOS O ACTUALES</h2>
+    <br>
+    <hr>
+    <br>
+    <div class="container main-container">
+        <div class="form-group">
+            <asp:Label ID="Label1" runat="server" Text="Label">¿QUE ANIMALES A TENIDO?</asp:Label>
+            <asp:TextBox ID="animalesTenido" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
         <br>
-        <hr>
+        <h4>LOS QUE YA NO ESTÁN CON USTED</h4>
         <br>
-        <form class="container main-container" action="referencias.aspx" method="post">
-
-            <div class="form-group">
-                <input type="hidden" name="cc" value=">"/>
-                <input type="hidden" name="tipo_id" value=""/>
-                <label for="inputAnimalesHaTenido">Qué animales ha tenido </label>
-                <textarea type="text" class="form-control" id="AnimalesHaTenido" name="AnimalesHaTenido" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-            <br>
-            <h4>Los que ya no están con usted</h4>
-            <br>
-            <div class="form-group">
-                <label for="inputDonde_estan">Donde estan </label>
-                <textarea type="text" class="form-control" id="donde_estan" name="donde_estan" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputporque">Porque </label>
-                <textarea type="text" class="form-control" id="porque" name="porque" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputcuantotiempo">¿Cuánto tiempo vivió con usted? </label>
-                <textarea type="text" class="form-control" id="cuantotiempo" name="cuantotiempo" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputAnimalesActuales">Actualmente, ¿qué animales tiene?</label>
-                <textarea type="text" class="form-control" id="AnimalesActuales" name="AnimalesActuales" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputCuantoTiempo">¿Cuánto tiempo llevan con usted?</label>
-                <textarea type="text" class="form-control" id="CuantoTiempo" name="CuantoTiempo" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputComoLlegaron">¿Cómo llegaron a usted?</label>
-                <textarea type="text" class="form-control" id="ComoLlegaron" name="ComoLlegaron" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <h4>Los animales que ha tenido o tienen están o estuvieron: </h4>
-
-            <div class="form-group">
-                <label for="inputDesparasitados">Desparasitados</label>
-                <select class="form-control" name="Desparasitados" id="Desparasitados" required="required">
-                    <option>Seleccione una opcion...</option>
-                    <option>SI</option>
-                    <option>NO</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="inputEsterilizado">Esterilizados</label>
-                <select class="form-control" name="Esterilizado" id="Esterilizado" required="required">
-                    <option>Seleccione una opcion...</option>
-                    <option>SI</option>
-                    <option>NO</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="inputVacunados">Vacunados</label>
-                <select class="form-control" name="vacunados" id="vacunados" required="required">
-                    <option>Seleccione una opcion...</option>
-                    <option>SI</option>
-                    <option>NO</option>
-                </select>
-            </div>
-            <br>
-            <br>
-            <h3 class="subtitulo">ESPACIO Y ACTIVIDADES PARA TU COMPAÑERO</h3>
-            <br>
-            <br>
-
-            <div class="form-group">
-                <label for="inputActividades">Qué tipo de actividades planeas realizar con su compañero gato</label>
-                <textarea type="text" class="form-control" id="actividades" name="actividades" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputDormira">En dónde dormiría</label>
-                <textarea type="text" class="form-control" id="dormira" name="dormira" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputpermaneceraSolo">¿Cuántas horas del día permanecería solo?</label>
-                <textarea type="text" class="form-control" id="permaneceraSolo" name="permaneceraSolo" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputCompartirConEl">¿Cuántas horas del día puede compartir con él?</label>
-                <textarea type="text" class="form-control" id="CompartirConEl" name="CompartirConEl" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputNadieEncasa">¿En dónde estaría mientras no hubiera nadie en casa?</label>
-                <textarea type="text" class="form-control" id="NadieEncasa" name="NadieEncasa" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputmudarse">¿Qué sucedería con el animal si tuviera usted que mudarse a otra casa, ciudad o país?</label>
-                <textarea type="text" class="form-control" id="mudarse" name="mudarse" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputGastos">¿Conoce los gastos que implica tener un animal de compañía? Enumere mínimo cuatro</label><br>
-                1. <input type="text" class="form-control" id="gastos1" name="gastos1" placeholder="INGRESE SU RESPUESTA" required="required">
-                2. <input type="text" class="form-control" id="gastos2" name="gastos2" placeholder="INGRESE SU RESPUESTA" required="required">
-                3. <input type="text" class="form-control" id="gastos3" name="gastos3" placeholder="INGRESE SU RESPUESTA" required="required">
-                4. <input type="text" class="form-control" id="gastos4" name="gastos4" placeholder="INGRESE SU RESPUESTA" required="required">
-            </div>
-
-            <div class="form-group">
-                <label for="inputHacerseCargo">¿Quién se hará cargo económicamente del animal?</label>
-                <input type="text" class="form-control" id="HacerseCargo" name="HacerseCargo" placeholder="INGRESE SU RESPUESTA" required="required">
-            </div>
-
-            <div class="form-group">
-                <label for="inputProvieneningresos">¿De dónde provienen sus ingresos?</label>
-                <input type="text" class="form-control" id="Provieneningresos" name="Provieneningresos" placeholder="INGRESE SU RESPUESTA" required="required">
-            </div>
-
-            <div class="form-group">
-                <label for="inputCoberturaDeGastos">Todos los gastos relacionados los cubriremos de la siguiente forma</label>
-                <textarea type="text" class="form-control" id="CoberturaDeGastos" name="CoberturaDeGastos" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputPeriodoAjuste"> ¿Está dispuesto a que el animal tenga un periodo de ajuste en el que aprenda dónde debe ir 
-                    al baño y se adapte a la familia?</label>
-                <textarea type="text" class="form-control" id="PeriodoAjuste" name="PeriodoAjuste" placeholder="INGRESE SU RESPUESTA" required="required">
-                </textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="inputTiempoAjuste">¿Cuánto tiempo?</label>
-                <input type="text" class="form-control" id="TiempoAjuste" name="TiempoAjuste" placeholder="INGRESE SU RESPUESTA" required="required">
-            </div>
-
-            <div class="form-group">
-                <label for="inputVisitaDomiciliaria">¿Está de acuerdo en que se le haga una visita domiciliaria para conocer el hogar donde va a 
-                    vivir antes de la adopción?</label>
-                <select class="form-control" name="VisitaDomiciliaria" id="VisitaDomiciliaria" required="required">
-                    <option>Seleccione una opcion...</option>
-                    <option>SI</option>
-                    <option>NO</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="inputSeguimiento">¿Está de acuerdo en que se haga un seguimiento después de la adopción?</label>
-                <select class="form-control" name="Seguimiento" id="Seguimiento" required="required">
-                    <option>Seleccione una opcion...</option>
-                    <option>SI</option>
-                    <option>NO</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="inputContrato">¿Está de acuerdo con firmar un contrato de adopción si el gato o perro le es dado en 
-                    adopción?</label>
-                <select class="form-control" name="contrato" id="contrato" required="required">
-                    <option>Seleccione una opcion...</option>
-                    <option>SI</option>
-                    <option>NO</option>
-                </select>
-            </div>
-
-            <center><button type="submit" class="btn btn-primary">SIGUIENTE</button></center>
-        </form>
-        
-         <a href="Default.aspx"><img class="inicio" src="/Imagenes/inicio_profe.jpg" alt="Inicio"/><br></a>
-
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+        <div class="form-group">
+            <asp:Label ID="Label2" runat="server" Text="Label">¿DONDE ESTÁN?</asp:Label>
+            <asp:TextBox ID="dondeEstan" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label3" runat="server" Text="Label">¿POR QUE?</asp:Label>
+            <asp:TextBox ID="porque" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label4" runat="server" Text="Label">¿CUÁNTO TIEMPO VIVIÓ CON USTED?</asp:Label>
+            <asp:TextBox ID="cuantoTiempo" runat="server"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label5" runat="server" Text="Label">ACTUALMENTE, ¿QUE ANIMALES TIENE?</asp:Label>
+            <asp:TextBox ID="animalesTiene" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label6" runat="server" Text="Label">¿CUÁNTOS TIEMPO LLEVAN CON USTED?</asp:Label>
+            <asp:TextBox ID="tiempo" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label7" runat="server" Text="Label">¿CÓMO LLEGARON A USTED?</asp:Label>
+            <asp:TextBox ID="comoLlegaron" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <h4>Los animales que ha tenido o tienen están o estuvieron: </h4>
+        <div class="form-group">
+            <asp:Label ID="Label8" runat="server" Text="Label">DESPARASITADOS</asp:Label>
+            <asp:DropDownList ID="deAcuerdo" runat="server">
+                <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
+                <asp:ListItem Text="SI" Value="1"></asp:ListItem>
+                <asp:ListItem Text="NO" Value="2"></asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label9" runat="server" Text="Label">ESTERILIZADOS</asp:Label>
+            <asp:DropDownList ID="esterilizados" runat="server">
+                <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
+                <asp:ListItem Text="SI" Value="1"></asp:ListItem>
+                <asp:ListItem Text="NO" Value="2"></asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label10" runat="server" Text="Label">VACUNADOS</asp:Label>
+            <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
+                <asp:ListItem Text="SI" Value="1"></asp:ListItem>
+                <asp:ListItem Text="NO" Value="2"></asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <br>
+        <br>
+        <h3 class="subtitulo">ESPACIO Y ACTIVIDADES PARA TU COMPAÑERO</h3>
+        <br>
+        <br>
+        <div class="form-group">
+            <asp:Label ID="Label11" runat="server" Text="Label">QUE TIPO DE ACTIVIDADES PLANEA REALIZAR CON SU COMPAÑERO GATO</asp:Label>
+            <asp:TextBox ID="compañeroGato" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label12" runat="server" Text="Label">¿EN DONDE DORMIRÁ?</asp:Label>
+            <asp:TextBox ID="dormitorio" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label13" runat="server" Text="Label">¿CUÁNTAS HORAS DEL DÍA PERMANECERÍA SOLO?</asp:Label>
+            <asp:TextBox ID="soledad" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label14" runat="server" Text="Label">¿CUÁNTAS HORAS DEL DÍA PUEDE COMPARTIR CON ÉL?</asp:Label>
+            <asp:TextBox ID="compartir" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label15" runat="server" Text="Label">¿EN DÓNDE ESTARÍA MIENTRAS NO HUBIERA NADIE EN CASA?</asp:Label>
+            <asp:TextBox ID="soledadEnCasa" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label16" runat="server" Text="Label">¿QUÉ SUCEDERÍA CON EL ANIMAL SI TUVIERA USTED QUE MUDARSE A OTRA CASA, CIUDAD O PAÍS?</asp:Label>
+            <asp:TextBox ID="mudanza" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label25" runat="server" Text="Label">¿CONOCE LOS GASTOS QUE IMPLICA TENER UNA ANIMAL DE COMPAÑIA?</asp:Label>
+            <asp:TextBox ID="gastos" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label17" runat="server" Text="Label">¿QUIEN SE HARÁ CARGO ECONÓMICAMENTE DEL ANIMAL?</asp:Label>
+            <asp:TextBox ID="responsable" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label18" runat="server" Text="Label">¿DE DONDE PROVIENEN SUS INGRESOS?</asp:Label>
+            <asp:TextBox ID="ingresos" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label19" runat="server" Text="Label">TODOS LOS GASTOS RELACINADOS SERAN CUBIERTOS DE LA SUIGENTE FORMA</asp:Label>
+            <asp:TextBox ID="gastosCubiertos" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label20" runat="server" Text="Label">¿ESTÁ DISPUESTO A QUE EL ANIMAL TENGA UN PERIODO DE AJUSTE EN EL QUE APRENDA DONDE IR AL BAÑO Y SE ADAPTE A LA FAMILIA</asp:Label>
+            <asp:TextBox ID="adaptacion" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label21" runat="server" Text="Label">¿CUANTO TIEMPO?</asp:Label>
+            <asp:TextBox ID="tiempoAdaptacion" runat="server" placeHolder="INGRESE SU RESPUESTA" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label22" runat="server" Text="Label">¿ESTÁ DE ACUERDO EN QUE SE LE HAGA UNA VISITA DOMICILIARIO PARA CONOCER EL HOGAR DONDE VA A VIVIR ANTES DE LA ADOPCIÓN?</asp:Label>
+            <asp:DropDownList ID="DropDownList2" runat="server">
+                <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
+                <asp:ListItem Text="SI" Value="1"></asp:ListItem>
+                <asp:ListItem Text="NO" Value="2"></asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label23" runat="server" Text="Label">¿ESTA DE ACUERDO EN QUE SE HAGA UN SEGUIMIENTO DESPUÉS DE LA ADOPCIÓN?</asp:Label>
+            <asp:DropDownList ID="DropDownList3" runat="server">
+                <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
+                <asp:ListItem Text="SI" Value="1"></asp:ListItem>
+                <asp:ListItem Text="NO" Value="2"></asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label24" runat="server" Text="Label">¿ESTÁ DE ACUERDO CON FIRMAR UN CONTRATO DE ADOPCIÓN SI EL GATO O PERRRO LE ES DADO EN ADOPCIÓN?</asp:Label>
+            <asp:DropDownList ID="DropDownList4" runat="server">
+                <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
+                <asp:ListItem Text="SI" Value="1"></asp:ListItem>
+                <asp:ListItem Text="NO" Value="2"></asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <asp:Button ID="Button1" runat="server" Text="Button" CssClass="btn-primary" />
+    </div>
+    <a href="index.jsp"> <img class="inicio" src="Imagenes/inicio_profe.jpg" alt="Inicio"><br></a>
+</asp:Content>
