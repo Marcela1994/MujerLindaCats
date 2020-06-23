@@ -110,6 +110,9 @@
     <Content Include="About.aspx" />
     <Content Include="Adopciones.aspx" />
     <Content Include="Formulario1.aspx" />
+    <Content Include="Formulario2.aspx" />
+    <Content Include="Formulario3.aspx" />
+    <Content Include="Formulario4.aspx" />
     <Content Include="gif\adopciones.gif" />
     <Content Include="gif\contactenos.gif" />
     <Content Include="Imagenes\adopciones.jpg" />
@@ -263,6 +266,27 @@
     </Compile>
     <Compile Include="Formulario1.aspx.designer.cs">
       <DependentUpon>Formulario1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario2.aspx.cs">
+      <DependentUpon>Formulario2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formulario2.aspx.designer.cs">
+      <DependentUpon>Formulario2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario3.aspx.cs">
+      <DependentUpon>Formulario3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formulario3.aspx.designer.cs">
+      <DependentUpon>Formulario3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario4.aspx.cs">
+      <DependentUpon>Formulario4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formulario4.aspx.designer.cs">
+      <DependentUpon>Formulario4.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Test.Principal
+namespace PaginaMujerLinda
 {
-    public partial class formulario4 : System.Web.UI.Page
+    public partial class Formulario4 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

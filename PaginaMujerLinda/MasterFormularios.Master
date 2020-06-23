@@ -41,7 +41,6 @@
             </Scripts>
         </asp:ScriptManager>
 
-    </form>
     <center>
     <table border="0">
         <thead>
@@ -60,9 +59,9 @@
     </table>
     </center>
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
     </div>
+    </form>
     <footer>
         <h5>Deisy Marcela Cuellar Galvira - Desarrollo de software ciclo 4<br>
             Politecnico Internacional</h5>
