@@ -77,7 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBD.cs" />
-    <Compile Include="dataTable.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="MascotaDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
