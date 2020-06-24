@@ -9,7 +9,7 @@ namespace Datos
 {
     public class ResumenFormulario
     {
-        public DataTable resumenFormulario()
+        public DataTable consultarFormulariosDiligenciados()
         {
 
             ConexionBD con = new ConexionBD();

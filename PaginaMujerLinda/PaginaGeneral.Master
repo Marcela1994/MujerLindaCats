@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PaginaMujerLinda.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaGeneral.master.cs" Inherits="PaginaMujerLinda.PaginaGeneral" %>
 
 <!DOCTYPE html>
 
@@ -41,7 +41,6 @@
 
             </div>
 
-
             <asp:ScriptManager runat="server">
                 <Scripts>
                     <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -61,18 +60,6 @@
                     <%--Site Scripts--%>
                 </Scripts>
             </asp:ScriptManager>
-
-            <div class="form-row align-items-center">
-                <div class="col-auto">
-                    <asp:TextBox ID="ingreso_user" runat="server" CssClass="form-control m-3" placeholder="Ingrese su usuario"></asp:TextBox>
-                </div>
-                <div class="col-auto">
-                    <asp:TextBox ID="ingreso_pass" runat="server" TextMode="Password" CssClass="form-control m-3" placeholder="Ingrese la clave"></asp:TextBox>
-                </div>
-                <div class="col-auto">
-                    <asp:Button ID="btn_ingresar" runat="server" Text="INGRESAR" CssClass="btn btn-primary m-3" OnClick="btn_ingresar_Click" />
-                </div>
-            </div>
         </nav>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
