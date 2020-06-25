@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="seleccion.aspx.cs" Inherits="PaginaMujerLinda.seleccion" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Administrativos.Master" AutoEventWireup="true" CodeBehind="seleccion.aspx.cs" Inherits="PaginaMujerLinda.seleccion" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container main-container">
         <h1 class="titulo">QUE OPERACION DESEA REALIZAR</h1>
         <br>
