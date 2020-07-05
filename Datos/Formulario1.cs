@@ -15,7 +15,7 @@ namespace Datos
 {
     public class Formulario1
     {
-        public string ingresoInformacionPersonal(string tipo_documento, int nro_documento, string nombres, string apellidos, string email, 
+        public string ingresoInformacionPersonal(string tipo_documento, double nro_documento, string nombres, string apellidos, string email, 
                                                  string direccion_hogar, string direccion_trabajo, string ocupacion, int telefono1, int telefono2,
                                                  string facebook, string instagram )
         {
@@ -25,7 +25,7 @@ namespace Datos
             Database sql = new SqlDatabase(con.bdLocal);
             DbCommand cmd = sql.GetStoredProcCommand("ingresoInformacionPersona");
             sql.AddInParameter(cmd, "@tipo_documento", DbType.String, tipo_documento);
-            sql.AddInParameter(cmd, "@nro_documento", DbType.Int32, nro_documento);
+            sql.AddInParameter(cmd, "@nro_documento", DbType.Int64, nro_documento);
             sql.AddInParameter(cmd, "@nombres", DbType.String, nombres);
             sql.AddInParameter(cmd, "@apellidos", DbType.String, apellidos);
             sql.AddInParameter(cmd, "@email", DbType.String, email);

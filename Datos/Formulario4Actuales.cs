@@ -10,7 +10,7 @@ namespace Datos
 {
     public class Formulario4Actuales
     {
-        public int ingresoDatosMascotasActuales(string tipo_documento, int nro_documento, string animales_actuales, string cuanto_tiempo_actuales,
+        public int ingresoDatosMascotasActuales(string tipo_documento, double nro_documento, string animales_actuales, string cuanto_tiempo_actuales,
                                            string como_llegaron, string desparasitado, string esterilizado, string vacunado, string actividades,
                                            string dormira, string permaneceraSolo, string compartirConEl, string nadieEnCasa, string mudarse, string gastos1,
                                            string gastos2, string gastos3, string gastos4, string hacerseCargo, string provienenIngresos, string coberturaDeGastos,

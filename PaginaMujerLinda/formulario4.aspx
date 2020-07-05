@@ -41,7 +41,7 @@
         <h4>Los animales que ha tenido o tienen están o estuvieron: </h4>
         <div class="form-group">
             <asp:Label ID="Label8" runat="server" Text="Label">DESPARASITADOS</asp:Label>
-            <asp:DropDownList ID="desparasitado" runat="server" CssClass="form-control">
+            <asp:DropDownList ID="desparasitado" runat="server" CssClass="form-control col-md-9">
                 <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
                 <asp:ListItem Text="SI" Value="1"></asp:ListItem>
                 <asp:ListItem Text="NO" Value="2"></asp:ListItem>
@@ -49,7 +49,7 @@
         </div>
         <div class="form-group">
             <asp:Label ID="Label9" runat="server" Text="Label">ESTERILIZADOS</asp:Label>
-            <asp:DropDownList ID="esterilizados" runat="server" CssClass="form-control">
+            <asp:DropDownList ID="esterilizados" runat="server" CssClass="form-control col-md-9">
                 <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
                 <asp:ListItem Text="SI" Value="1"></asp:ListItem>
                 <asp:ListItem Text="NO" Value="2"></asp:ListItem>
@@ -57,7 +57,7 @@
         </div>
         <div class="form-group">
             <asp:Label ID="Label10" runat="server" Text="Label">VACUNADOS</asp:Label>
-            <asp:DropDownList ID="vacunados" runat="server" CssClass="form-control">
+            <asp:DropDownList ID="vacunados" runat="server" CssClass="form-control col-md-9">
                 <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
                 <asp:ListItem Text="SI" Value="1"></asp:ListItem>
                 <asp:ListItem Text="NO" Value="2"></asp:ListItem>
@@ -122,7 +122,7 @@
         </div>
         <div class="form-group">
             <asp:Label ID="Label22" runat="server" Text="Label">¿ESTÁ DE ACUERDO EN QUE SE LE HAGA UNA VISITA DOMICILIARIO PARA CONOCER EL HOGAR DONDE VA A VIVIR ANTES DE LA ADOPCIÓN?</asp:Label>
-            <asp:DropDownList ID="ddlVisitaDomiciliaria" runat="server" CssClass="form-control">
+            <asp:DropDownList ID="ddlVisitaDomiciliaria" runat="server" CssClass="form-control col-md-9">
                 <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
                 <asp:ListItem Text="SI" Value="1"></asp:ListItem>
                 <asp:ListItem Text="NO" Value="2"></asp:ListItem>
@@ -130,7 +130,7 @@
         </div>
         <div class="form-group">
             <asp:Label ID="Label23" runat="server" Text="Label">¿ESTA DE ACUERDO EN QUE SE HAGA UN SEGUIMIENTO DESPUÉS DE LA ADOPCIÓN?</asp:Label>
-            <asp:DropDownList ID="ddlSeguimiento" runat="server" CssClass="form-control">
+            <asp:DropDownList ID="ddlSeguimiento" runat="server" CssClass="form-control col-md-9">
                 <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
                 <asp:ListItem Text="SI" Value="1"></asp:ListItem>
                 <asp:ListItem Text="NO" Value="2"></asp:ListItem>
@@ -138,7 +138,7 @@
         </div>
         <div class="form-group">
             <asp:Label ID="Label24" runat="server" Text="Label">¿ESTÁ DE ACUERDO CON FIRMAR UN CONTRATO DE ADOPCIÓN SI EL GATO O PERRRO LE ES DADO EN ADOPCIÓN?</asp:Label>
-            <asp:DropDownList ID="ddlContrato" runat="server" CssClass="form-control">
+            <asp:DropDownList ID="ddlContrato" runat="server" CssClass="form-control col-md-9">
                 <asp:ListItem Text="SELECCIONE UNA OPCIÓN" Value="0"></asp:ListItem>
                 <asp:ListItem Text="SI" Value="1"></asp:ListItem>
                 <asp:ListItem Text="NO" Value="2"></asp:ListItem>

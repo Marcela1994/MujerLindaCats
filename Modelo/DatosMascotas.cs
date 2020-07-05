@@ -10,7 +10,7 @@ namespace Modelo
     public class DatosMascotas
     {
         public string tipo_documento { get; set; }
-        public int nro_documento { get; set; }
+        public double nro_documento { get; set; }
         public string animales_ha_tenido { get; set; }
         public string donde_estan_antiguos { get; set; }
         public string porque_antiguos { get; set; }

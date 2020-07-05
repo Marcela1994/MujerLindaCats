@@ -18,7 +18,7 @@
             <center><h1 class="titulo">Gatitos buscando un hogar</h1>
                 <h2><a href="MostrarMascota.aspx">VER GATITOS</a></h2></center>
             <center><h1 class="titulo">Diligenciar el formulario de adopción</h1>
-                <h2><a href="Formulario1.aspx">FOMULARIO DE ADOPCIÓN</a></h2></center>
+                <h2><a href="Formulario1.aspx">FORMULARIO DE ADOPCIÓN</a></h2></center>
 
             <br><br>
         </div>

@@ -11,9 +11,36 @@ namespace PaginaMujerLinda
 {
     public partial class Formulario4 : System.Web.UI.Page
     {
+        string tipoDoc
+        {
+            get
+            {
+                return ViewState["tipoDoc"].ToString();
+            }
+            set
+            {
+                ViewState["tipoDoc"] = value;
+            }
+        }
+        double nroDoc
+        {
+            get
+            {
+                return (double)(ViewState["nroDoc"] ?? 0);
+            }
+            set
+            {
+                ViewState["nroDoc"] = value;
+            }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                this.EnableViewState = true;
+                this.tipoDoc = Session["tipo_documento"].ToString();
+                this.nroDoc = Double.Parse(Session["nro_documento"].ToString());
+            }
         }
 
         protected void btnSiguiente_guardar_Click(object sender, EventArgs e)
@@ -22,8 +49,8 @@ namespace PaginaMujerLinda
             Formulario4Actuales formAct = new Formulario4Actuales();
             Formulario4Antiguos formAnt = new Formulario4Antiguos();
 
-            mas.tipo_documento = "10239";
-            mas.nro_documento = 0;
+            mas.tipo_documento = this.tipoDoc;
+            mas.nro_documento = this.nroDoc;
             mas.animales_ha_tenido = animalesTenido.Text;
             mas.donde_estan_antiguos = dondeEstan.Text;
             mas.porque_antiguos = porque.Text;
@@ -59,6 +86,7 @@ namespace PaginaMujerLinda
             if (res.Equals(1) && res2.Equals(1))
             {
                 //mensaje_error.Text = "se registro correctamente el formulario 4";
+                Response.Redirect("MostrarMascota.aspx");
             }
             else 
             {

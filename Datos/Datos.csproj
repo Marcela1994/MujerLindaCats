@@ -79,6 +79,7 @@
     <Compile Include="ConexionBD.cs" />
     <Compile Include="Formulario1.cs" />
     <Compile Include="Formulario2.cs" />
+    <Compile Include="Formulario3.cs" />
     <Compile Include="Formulario4Actuales.cs" />
     <Compile Include="Formulario4Antiguos.cs" />
     <Compile Include="Login.cs" />

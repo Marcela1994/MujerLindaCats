@@ -14,7 +14,7 @@ namespace Datos
 {
     public class Formulario4Antiguos
     {
-        public int ingresoDatosMascotasAntiguas(string tipo_documento, int nro_documento, string animales_ha_tenido, string donde_estan_antiguos,
+        public int ingresoDatosMascotasAntiguas(string tipo_documento, double nro_documento, string animales_ha_tenido, string donde_estan_antiguos,
                                            string porque_antiguos, string cuanto_tiempo_antiguos)
         {
 
