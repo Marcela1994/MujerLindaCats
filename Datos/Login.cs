@@ -1,12 +1,8 @@
 ﻿using Microsoft.Practices.EnterpriseLibrary.Data;
 using Microsoft.Practices.EnterpriseLibrary.Data.Sql;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace Datos
 {
@@ -28,6 +24,27 @@ namespace Datos
             dtConsulta = DS.Tables[0];
             res = int.Parse(dtConsulta.Rows[0]["existe"].ToString());
             return res;
-        } 
+        }
+
+        public int crearUser(int doc, string usuario, string pass, string nombre) 
+        {
+            int res = 0;
+            ConexionBD con = new ConexionBD();
+
+            SqlConnection conexionSql = new SqlConnection(con.bdLocal);
+            conexionSql.Open();
+            SqlCommand command = new SqlCommand("insertarUsuario", conexionSql);
+            command.CommandType = CommandType.StoredProcedure;
+
+            command.Parameters.AddWithValue("@doc", doc);
+            command.Parameters.AddWithValue("@usuario", usuario);
+            command.Parameters.AddWithValue("@clave", pass);
+            command.Parameters.AddWithValue("@nombre", nombre);
+
+            res = command.ExecuteNonQuery();
+
+            conexionSql.Close();
+            return res;
+        }
     }
 }

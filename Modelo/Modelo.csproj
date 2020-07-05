@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatosFamiliares.cs" />
+    <Compile Include="DatosMascotas.cs" />
     <Compile Include="DatosPersonales.cs" />
     <Compile Include="Mascota.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

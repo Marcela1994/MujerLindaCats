@@ -21,7 +21,7 @@
 <body style="padding-top: 3px">
     <form runat="server">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-top: 0px">
-            <asp:Image ID="logoNabis" runat="server" CssClass="navbar-brand redes-sociales" ImageUrl="~/Imagenes/mujerlinda_logo.jpg" />
+            <asp:Image ID="logoMujerLinda" runat="server" CssClass="navbar-brand redes-sociales" ImageUrl="~/Imagenes/mujerlinda_logo.jpg" />
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

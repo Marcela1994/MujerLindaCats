@@ -9,7 +9,7 @@
                         <th><img class="inicial" src="Imagenes/mujerlinda_logo.jpg"></th>
                         <th><h1 class="titulo">LINDA</h1></th>
                     </center></tr>
-                    </thead>
+                    </thead><a href="Default.aspx">Default.aspx</a>
                 </table></center>
         <br>
         <hr>

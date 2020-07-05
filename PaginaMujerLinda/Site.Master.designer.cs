@@ -7,20 +7,22 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace PaginaMujerLinda {
-    
-    
-    public partial class SiteMaster {
-        
+namespace PaginaMujerLinda
+{
+
+
+    public partial class SiteMaster
+    {
+
         /// <summary>
-        /// Control logoNabis.
+        /// Control logoMujerLinda.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image logoNabis;
-        
+        protected global::System.Web.UI.WebControls.Image logoMujerLinda;
+
         /// <summary>
         /// Control ingreso_user.
         /// </summary>
@@ -29,7 +31,7 @@ namespace PaginaMujerLinda {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ingreso_user;
-        
+
         /// <summary>
         /// Control ingreso_pass.
         /// </summary>
@@ -38,7 +40,7 @@ namespace PaginaMujerLinda {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ingreso_pass;
-        
+
         /// <summary>
         /// Control btn_ingresar.
         /// </summary>
@@ -47,7 +49,7 @@ namespace PaginaMujerLinda {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_ingresar;
-        
+
         /// <summary>
         /// Control MainContent.
         /// </summary>

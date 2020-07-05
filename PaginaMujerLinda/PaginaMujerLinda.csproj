@@ -109,6 +109,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Adopciones.aspx" />
+    <Content Include="CreacionUsuarios.aspx" />
     <Content Include="Formulario1.aspx" />
     <Content Include="Formulario2.aspx" />
     <Content Include="Formulario3.aspx" />
@@ -261,6 +262,13 @@
     </Compile>
     <Compile Include="Contactenos.aspx.designer.cs">
       <DependentUpon>Contactenos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreacionUsuarios.aspx.cs">
+      <DependentUpon>CreacionUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreacionUsuarios.aspx.designer.cs">
+      <DependentUpon>CreacionUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
